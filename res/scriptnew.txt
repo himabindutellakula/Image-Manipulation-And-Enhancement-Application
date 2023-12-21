@@ -1,0 +1,65 @@
+load women.jpg women
+rgb-split women women_r women_g women_b
+save women_r.jpg women_r
+save women_g.jpg women_g
+save women_b.jpg women_b
+rgb-combine women_r women_g women_b women_combine
+save women_combine.jpg women_combine
+brighten 200 women women_brighter 
+brighten -200 women women_darker 
+save women_brighter.jpg women_brighter
+save women_darker.jpg women_darker 
+vertical-flip women women_vertical
+save women_vertical.jpg women_vertical
+horizontal-flip women women_horizontal
+save women_horizontal.jpg  women_horizontal
+value-component women women_greyscale_value
+save women_greyscale_value.jpg women_greyscale_value
+luma-component women women_greyscale_luma
+save women_greyscale_luma.jpg women_greyscale_luma
+intensity-component women women_greyscale_intensity
+save women_greyscale_intensity.jpg women_greyscale_intensity 
+red-component women women_greyscale_red
+save women_greyscale_red.jpg  women_greyscale_red
+green-component women women_greyscale_green
+save women_greyscale_green.jpg women_greyscale_green
+blue-component women women_greyscale_blue
+save women_greyscale_blue.jpg women_greyscale_blue
+blur women women_blur
+save women_blur.jpg women_blur 
+blur women_blur women_blur_blur
+save women_blur_blur.jpg women_blur_blur
+sharpen women women_sharpen
+save women_sharpen.jpg women_sharpen
+sharpen women_sharpen women_sharpen_sharpen
+save women_sharpen_sharpen.jpg women_sharpen_sharpen
+sepia women women_sepia
+save women_sepia.jpg women_sepia
+compress 50 women womenCompress50
+save womenCompress50.png womenCompress50
+compress 80 women womenCompress80
+save womenCompress80.png womenCompress80
+compress 0 women womenCompress0
+save womenCompress0.png womenCompress0
+histogram women womenHistogram
+save womenHistogram.png womenHistogram
+color-correct women womenColorCorrect
+save womenColorCorrect.jpg womenColorCorrect
+histogram womenColorCorrect womenColorCorrectHistogram
+save womenColorCorrectHistogram.png womenColorCorrectHistogram
+levels-adjust 5 135 250 women womenAdjustLevels
+save womenAdjustLevels.png womenAdjustLevels
+histogram womenAdjustLevels womenAdjustLevelsHistogram
+save womenAdjustLevelsHistogram.jpg womenAdjustLevelsHistogram
+levels-adjust 10 130 248 women womenAdjustLevels2
+save womenAdjustLevels2.png womenAdjustLevels2
+histogram womenAdjustLevels2 womenAdjustLevelsHistogram2
+save womenAdjustLevelsHistogram2.jpg womenAdjustLevelsHistogram2
+sepia women womenSplitSepia50 split 50
+save womenSplitSepia50.png womenSplitSepia50
+sharpen women womenSplitSharpen80 split 80
+save wpmenSplitSharpen80.png womenSplitSharpen80
+red-component women womenSplitRCGreyScale70 split 70
+save womenSplitRCGreyScale70.png womenSplitRCGreyScale70
+levels-adjust 10 130 248 women womenSplitAdjustLevels80 split 80
+save womenSplitAdjustLevels80.png womenSplitAdjustLevels80
